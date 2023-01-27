@@ -4,7 +4,7 @@ import com.driver.repositories.AuthorRepository;
 import com.driver.repositories.BookRepository;
 import com.driver.repositories.CardRepository;
 import com.driver.repositories.StudentRepository;
-import com.example.library.studentlibrary.models.*;
+import com.driver.models.*;
 import com.driver.security.UserRepository;
 import com.driver.services.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
