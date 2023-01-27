@@ -1,10 +1,12 @@
 package com.driver.services;
 
-import com.driver.repositories.CardRepository;
-import com.driver.models.Author;
-import com.driver.models.Card;
-import com.driver.models.Student;
-import com.driver.repositories.AuthorRepository;
+import com.example.library.studentlibrary.models.Author;
+import com.example.library.studentlibrary.models.Card;
+import com.example.library.studentlibrary.models.Student;
+import com.example.library.studentlibrary.repositories.AuthorRepository;
+import com.example.library.studentlibrary.repositories.CardRepository;
+import com.example.library.studentlibrary.services.AuthorService;
+import com.example.library.studentlibrary.services.CardService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,18 +14,20 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
-import static com.driver.models.CardStatus.*;
-import static org.mockito.Mockito.*;
+import static com.example.library.studentlibrary.models.CardStatus.*;
+import static org.mockito.Mockito.doAnswer;
 
 @RunWith(MockitoJUnitRunner.class)
 public class CardServiceTest {
-    @InjectMocks CardService cardService;
+    @InjectMocks
+    CardService cardService;
 
     @Mock
     CardRepository cardRepository;
 
 
-    @InjectMocks AuthorService authorService;
+    @InjectMocks
+    AuthorService authorService;
 
     @Mock
     AuthorRepository authorRepository;
