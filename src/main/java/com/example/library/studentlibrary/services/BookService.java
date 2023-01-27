@@ -24,9 +24,9 @@ public class BookService {
         }else if(genre != null){
             return bookRepository.findBooksByGenre(genre, available);
         }else if(author != null){
-            return bookRepository.findBooksByAuthor(author, available);
+           return bookRepository.findBooksByAuthor(author, available);
         }else{
-            return bookRepository.findByAvailability(available);
+           return bookRepository.findByAvailability(available);
         }
     }
 }

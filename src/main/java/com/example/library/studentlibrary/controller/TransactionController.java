@@ -16,8 +16,8 @@ public class TransactionController {
 
     @PostMapping("/issueBook")
     public ResponseEntity issueBook(@RequestParam("cardId") int cardId, @RequestParam("bookId") int bookId) throws Exception{
-        String externalTransactionId = transactionService.issueBook(cardId, bookId);
-        return new ResponseEntity<>("transaction completed, here is your transactionId - " + externalTransactionId, HttpStatus.ACCEPTED);
+       String externalTransactionId = transactionService.issueBook(cardId, bookId);
+       return new ResponseEntity<>("transaction completed, here is your transactionId - " + externalTransactionId, HttpStatus.ACCEPTED);
     }
 
     @PostMapping("/returnBook")
