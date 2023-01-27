@@ -1,7 +1,8 @@
 package com.driver.services;
 
-import com.driver.repositories.AuthorRepository;
-import com.driver.models.Author;
+import com.example.library.studentlibrary.models.Author;
+import com.example.library.studentlibrary.repositories.AuthorRepository;
+import com.example.library.studentlibrary.services.AuthorService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -10,7 +11,8 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 @RunWith(MockitoJUnitRunner.class)
 public class AuthorServiceTest {
-    @InjectMocks AuthorService authorService;
+    @InjectMocks
+    AuthorService authorService;
 
     @Mock
     AuthorRepository authorRepository;

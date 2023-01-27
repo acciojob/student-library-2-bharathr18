@@ -1,7 +1,9 @@
 package com.driver.services;
 
-import com.driver.repositories.StudentRepository;
-import com.driver.models.Student;
+import com.example.library.studentlibrary.models.Student;
+import com.example.library.studentlibrary.repositories.StudentRepository;
+import com.example.library.studentlibrary.services.CardService;
+import com.example.library.studentlibrary.services.StudentService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,7 +21,8 @@ import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
 public class StudentServiceTest {
-    @InjectMocks StudentService studentService;
+    @InjectMocks
+    StudentService studentService;
 
     @Mock
     CardService cardService;

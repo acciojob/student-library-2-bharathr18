@@ -1,10 +1,10 @@
 package com.driver.services;
 
-import com.driver.models.*;
-import com.driver.repositories.BookRepository;
-import com.driver.repositories.CardRepository;
-import com.driver.repositories.TransactionRepository;
 import com.example.library.studentlibrary.models.*;
+import com.example.library.studentlibrary.repositories.BookRepository;
+import com.example.library.studentlibrary.repositories.CardRepository;
+import com.example.library.studentlibrary.repositories.TransactionRepository;
+import com.example.library.studentlibrary.services.TransactionService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -13,18 +13,19 @@ import org.mockito.Captor;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
-import static org.junit.Assert.assertNotNull;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
+import static org.junit.Assert.assertNotNull;
 import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
 public class TransactionServiceTest {
-    @InjectMocks TransactionService transactionService;
+    @InjectMocks
+    TransactionService transactionService;
 
     @Mock
     BookRepository bookRepository;
