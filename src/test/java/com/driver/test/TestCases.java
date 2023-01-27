@@ -1,8 +1,5 @@
 package com.driver.test;
 
-import com.driver.models.*;
-import com.driver.repositories.*;
-import com.driver.services.*;
 import com.example.library.studentlibrary.models.*;
 import com.example.library.studentlibrary.repositories.*;
 import com.example.library.studentlibrary.services.*;
@@ -17,9 +14,10 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 import java.util.*;
 
-import static com.driver.models.CardStatus.ACTIVATED;
-import static com.driver.models.CardStatus.DEACTIVATED;
-import static org.junit.Assert.*;
+import static com.example.library.studentlibrary.models.CardStatus.ACTIVATED;
+import static com.example.library.studentlibrary.models.CardStatus.DEACTIVATED;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.doAnswer;
 import static org.mockito.Mockito.when;
@@ -158,7 +156,7 @@ public class TestCases {
         Card card1 = new Card();
         card1.setBooks(new ArrayList<>());
         Card card2 = new Card();
-        card2.setCardStatus(CardStatus.DEACTIVATED);
+        card2.setCardStatus(DEACTIVATED);
         Card card3 = new Card();
         List<Book> booksOnCard3 = new ArrayList<>();
         booksOnCard3.add(book3);
