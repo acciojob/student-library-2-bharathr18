@@ -1,8 +1,7 @@
 package com.driver.services;
 
-import com.example.library.studentlibrary.models.Author;
-import com.example.library.studentlibrary.repositories.AuthorRepository;
-import com.example.library.studentlibrary.services.AuthorService;
+import com.driver.models.Author;
+import com.driver.repositories.AuthorRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;

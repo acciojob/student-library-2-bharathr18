@@ -1,10 +1,9 @@
 package com.driver.services;
 
-import com.example.library.studentlibrary.models.*;
-import com.example.library.studentlibrary.repositories.BookRepository;
-import com.example.library.studentlibrary.repositories.CardRepository;
-import com.example.library.studentlibrary.repositories.TransactionRepository;
-import com.example.library.studentlibrary.services.TransactionService;
+import com.driver.models.*;
+import com.driver.repositories.BookRepository;
+import com.driver.repositories.CardRepository;
+import com.driver.repositories.TransactionRepository;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

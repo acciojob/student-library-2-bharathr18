@@ -1,10 +1,9 @@
 package com.driver.services;
 
-import com.example.library.studentlibrary.models.Author;
-import com.example.library.studentlibrary.models.Book;
-import com.example.library.studentlibrary.models.Genre;
-import com.example.library.studentlibrary.repositories.BookRepository;
-import com.example.library.studentlibrary.services.BookService;
+import com.driver.models.Author;
+import com.driver.models.Book;
+import com.driver.models.Genre;
+import com.driver.repositories.BookRepository;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

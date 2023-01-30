@@ -1,8 +1,8 @@
 package com.driver.test;
 
-import com.example.library.studentlibrary.models.*;
-import com.example.library.studentlibrary.repositories.*;
-import com.example.library.studentlibrary.services.*;
+import com.driver.models.*;
+import com.driver.repositories.*;
+import com.driver.services.*;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,8 +14,8 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 import java.util.*;
 
-import static com.example.library.studentlibrary.models.CardStatus.ACTIVATED;
-import static com.example.library.studentlibrary.models.CardStatus.DEACTIVATED;
+import static com.driver.models.CardStatus.ACTIVATED;
+import static com.driver.models.CardStatus.DEACTIVATED;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.mockito.ArgumentMatchers.*;
